@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sourcign feature</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="feature.css">
+</head>
+
+<body>
+    <div class="testbox">
+        <!-- <form id="searchForm" autocomplete="off">
+            <label for="place"> Place </label>
+            <input type="text" name="place" id="place" placeholder="Australia">
+            <br>
+
+            <label for="job-title" class="field__label">Job title</label>
+            <input tabindex="2" type="text" name="jobTitle" id="jobTitle"
+              class="field__control field__control--input ui-autocomplete-input"
+              placeholder="E.g. Devops Engineer" autocomplete="off">
+            <br>
+
+            <label for="include-keywords" class="field__label">
+              <strong>Include</strong> Keywords.</label>
+
+            <input tabindex="3" type="text" name="keywords" id="keywords"
+              class="field__control field__control--input" placeholder="Eg. HTML AND CSS OR PHP"
+              value="">
+
+            <p id="submitSearchForm">Find the right people on LinkedIn</p>
+          </form> -->
+
+        <form id="searchForm" autocomplete="off">
+            <div class="banner">
+                <h1>Get the best talent!</h1>
+            </div>
+
+            <div class="colums">
+                <div class="item">
+                    <label for="city">City</label>
+                    <input id="city" type="text" name="city" placeholder="Sydney" required />
+                </div>
+                <div class="item">
+                    <label for="country">Country</label>
+                    <input id="country" type="text" name="country" placeholder="Australia" required />
+                </div>
+                <div class="item">
+                    <label for="job-title">Job title</label>
+                    <input type="text" name="jobTitle" id="jobTitle" placeholder="E.g. Devops Engineer"
+                        autocomplete="off" required>
+                </div>
+                <div class="item">
+                    <label for="include-keywords" class="field__label">
+                        <strong>Include</strong> Keywords.</label>
+
+                    <input type="text" name="keywords" id="keywords" placeholder="Eg. HTML AND CSS OR PHP" value="" required>
+                </div>
+
+                <!-- <div class="keyword-input">
+                    <input type="text" id="keyword-input-box" placeholder="Enter keyword"> <span class="add-keyword-btn">  +  </span>
+                </div>
+                  <div><ul id="keyword-list"></ul>
+                  </div> -->
+            </div>
+
+            <div class="btn-block">
+                <p class ="searchButton" id="submitSearchForm" >Find the right people!</p>
+            </div>
+            <div class="lds-default">
+                </div>
+
+            <div class="item">
+                <div id="table-container"></div>
+            </div>
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+        <script src="login/firebase_config.js"></script>
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/owl-carousel.js"></script>
+        <script src="assets/js/animation.js"></script>
+        <script src="assets/js/imagesloaded.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/feature.js"></script>
+
+    </div>
+</body>
+
+</html>

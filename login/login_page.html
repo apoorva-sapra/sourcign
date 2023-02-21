@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in & Sign-up Page</title>
+    <link rel="stylesheet" href="./login_page.css">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+ 
+</head>
+
+<body>
+    <p class="tip"></p>
+    <div class="cont">
+        <div class="form sign-in">
+            <img class="logo" src="../assets/images/sourcign_logo.jfif" alt="logo ">
+
+            <h2>Welcome!</h2>
+            <form id="signin_form">
+                <label>
+                    <span>Email*</span>
+                    <input type="email" id="signin_email" required />
+                </label>
+                <label>
+                    <span>Password*</span>
+                    <input type="password" id="signin_password" required />
+                </label>
+
+                <p class="forgot-pass"> <a class="forgot-pass" href="./forgot_password.html">Forgot password?</a> </p>
+                <button type="submit" class="submit">Sign In</button>
+                <!-- <button type="button" class="fb-btn">Connect with <span>facebook</span></button> -->
+            </form>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>New here?</h2>
+                    <p>Register to experience the power of finding best candidates for your open roles!</p>
+                </div>
+                <div class="img__text m--in">
+                    <h2>One of us?</h2>
+                    <p>If you already have an account, just sign in!</p>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Register</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <img class="logo" src="../assets/images/sourcign_logo.jfif" alt="logo ">
+
+                <h2>Register with us Today!!</h2>
+                <form id="signup_form">
+                    <label>
+                        <span>Name*</span>
+                        <input type="text" id="signup_name" required />
+                    </label>
+                    <label>
+                        <span>Email*</span>
+                        <input type="email" id="signup_email" required />
+                    </label>
+                    <label>
+                        <span>Company*</span>
+                        <input type="company" id="company" required />
+                    </label>
+                    
+                    <!-- <label>
+                        <span>Password*</span> <p id="errorMsg"></p>
+                        <input type="password" id="signup_password" required/>
+                    </label> -->
+
+                    <!-- <div class="container">
+                        <form id="login" onsubmit="process(event)">
+                          <p>Enter your phone number:</p>
+                          <input id="phone" type="tel" name="phone" />
+                          <input type="submit" class="btn" value="Verify" />
+                        </form>
+                    </div> -->
+                       
+
+                    <button type="submit" class="submit">Register</button>
+                    <!-- <button type="button" class="fb-btn">Join with <span>facebook</span></button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+    <script src="firebase_config.js"></script>
+    <script src="login_data.js"></script>
+    <script src="login_page.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+<!-- <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script> -->
+</html>
